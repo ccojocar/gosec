@@ -222,6 +222,7 @@ directory you can supply `./...` as the input argument.
 - G120: Unbounded form parsing in HTTP handlers can cause memory exhaustion
 - G121: Unsafe CrossOriginProtection bypass patterns
 - G122: Filesystem TOCTOU race risk in filepath.Walk/WalkDir callbacks
+- G123: TLS resumption may bypass VerifyPeerCertificate when VerifyConnection is unset
 - G201: SQL query construction using format string
 - G202: SQL query construction using string concatenation
 - G203: Use of unescaped data in HTML templates

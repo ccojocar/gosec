@@ -79,6 +79,10 @@ var _ = Describe("gosec analyzers", func() {
 			runner("G122", testutils.SampleCodeG122)
 		})
 
+		It("should detect TLS resumption VerifyPeerCertificate bypass patterns", func() {
+			runner("G123", testutils.SampleCodeG123)
+		})
+
 		It("should detect hardcoded nonce/IV", func() {
 			runner("G407", testutils.SampleCodeG407)
 		})
